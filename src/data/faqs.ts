@@ -13,25 +13,25 @@ export const faqLists: Record<string, FaqList> = {
         id: 'main',
         faqs: [
             {
-                question: "Is Titan Core completely free to use?",
-                answer: "Yes, Titan Core is 100% free and open-source. You can use it for personal and commercial projects without any licensing fees."
+                question: "What types of construction projects do you handle?",
+                answer: "We specialize in a wide range of construction projects, including [mention 2-3 broad examples like: new commercial builds, residential renovations, and light industrial projects]. The best way to know if we're a fit is to contact us with your specific project details."
             },
             {
-                question: "How do I customize the color schemes?",
-                answer: "Titan Core comes with 10 pre-built color schemes that can be easily switched through the theme configuration file. For custom colors, you can modify the CSS variables in the `src/styles/global.css` file to match your brand identity."
+                question: "How long has your company been in business?",
+                answer: "[Your Company Name] has been proudly serving the [Your Region/City] area for over [Number] years, bringing a wealth of experience and a proven track record to every job."
             },
             {
-                question: "Do I need to know Astro JS to use this theme?",
-                answer: "Basic familiarity with Astro JS is helpful, but not required. The component-based architecture makes it easy to understand and modify even if you're new to Astro."
+                question: "How do I get a quote for my project?",
+                answer: "Getting started is easy! You can call us at [Your Phone Number], email us at [Your Email Address], or fill out the contact form on our website. We'll then schedule an initial consultation to discuss your needs, scope, and provide a detailed estimate."
             },
             {
-                question: "Can I use Titan Core as a starting point for client projects?",
-                answer: "Absolutely! Titan Core is designed to be a foundation theme that you can build upon for client projects. Its clean architecture and minimal approach make it perfect as a starting point for customized websites."
+                question: "What geographical areas do you serve?",
+                answer: "We primarily operate in [Your City/Main County] and the surrounding [mention general area, e.g., tri-county area, or specific neighboring towns/counties]. If you're unsure if your project falls within our service range, please don't hesitate to reach out."
             },
             {
-                question: "How often is Titan Core updated?",
-                answer: "We aim to update Titan Core regularly to keep it compatible with the latest Astro JS releases and web standards. Major updates are released quarterly, with smaller fixes and improvements added more frequently. You can star our GitHub repository to stay informed about updates."
-            }
+                question: "Are you licensed and insured?",
+                answer: "Absolutely. We are fully licensed [mention your state license # if common practice and desired] and comprehensively insured for all construction work we undertake. We prioritize safety and professionalism, providing peace of mind for our clients."
+            },
         ]
     }
 };

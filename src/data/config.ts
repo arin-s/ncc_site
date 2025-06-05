@@ -1,21 +1,20 @@
 export const siteConfig = {
-  companyName: 'Titan Core',
-  siteUrl: 'https://titan-core.com',
+  companyName: 'New Covenant Construction',
+  siteUrl: 'https://newcov.com',
   Socials: {
-      xSocial: 'https://x.com/astrodotbuild',
-      Github: 'https://github.com/withastro',
-      Instagram: 'https://www.instagram.com/astrodotbuild',
-      LinkedIn: 'https://www.linkedin.com/company/astrodotbuild',
-      Email: 'support@titan-core.com',
+      xSocial: 'https://x.com/',
+      Instagram: 'https://www.instagram.com/',
+      LinkedIn: 'https://www.linkedin.com/',
+      Email: 'support@newcov.com',
       Phone: '+123 456 7890',
-      Location: '123 Main St, Anytown, USA',
+      Location: '123 Main St, Sydney, NSW',
   }
 };
 
 export const SEO = {
   Separator: '|',
-  SiteName: 'Titan Core',
-  defaultDescription: 'A modern, high-performance Astro JS theme',
+  SiteName: 'New Covenant Constructions',
+  defaultDescription: 'Your preferred home-building solution',
 };
   
 export const blogSetting = {

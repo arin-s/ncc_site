@@ -1,6 +1,5 @@
 ---
 import Button from '@components/ui/Button.astro';
-import { Image } from 'astro:assets';
 
 interface HeroContent {
     title: string;
@@ -11,7 +10,7 @@ interface HeroContent {
         variant?: 'primary' | 'secondary' | 'ghostLight' | 'ghostDark';
         target?: string;
     }[];
-    backgroundImage?: string | any; // Using any for now to handle both string paths and imported images
+    backgroundVideo?: string | any; // Using any for now to handle both string paths and imported images
     overlayOpacity?: number; // Value between 0 and 1
 }
 
@@ -23,19 +22,15 @@ const { content } = Astro.props;
 const opacity = content.overlayOpacity ?? 1; // Default opacity if not specified
 ---
 
-<section class="header-offset relative">
-    {content.backgroundImage && (
+<section class="header-offset relative h-[80vh]">
+    {content.backgroundVideo && (
         <div class="absolute inset-0 left-0 top-0 w-full h-full overflow-hidden">
-            <Image
-                src={content.backgroundImage}
-                alt=""
-                width={1920}
-                height={1080}
+            <video
+                src={content.backgroundVideo}
+                autoplay
+                muted
+                loop
                 class="w-full h-full object-cover"
-                quality={70}
-                format="webp"
-                loading="eager"
-                decoding="async"
             />
             <div
                 class="hero-background absolute inset-0 left-0 top-0 w-full h-full overflow-hidden"

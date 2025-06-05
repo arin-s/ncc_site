@@ -12,38 +12,27 @@ import CtaBanner from '@components/sections/CtaBanner.astro';
 import Faqs from '@components/sections/Faqs.astro';
 import { faqLists } from '@data/faqs';
 import RecentPosts from '@components/sections/RecentPosts.astro';
-import heroImage from '../assets/images/home/default-hero-2.jpg';
+import heroVideo from '../assets/videos/banner-video.mp4';
 import styleGuideImage from '../assets/images/home/developer.jpg';
 
 const seoTitle = "Modern, High-Performance Astro Theme";
 const seoDescription = "A modern, high-performance Astro theme for developer portfolios and documentation sites.";
 
 const heroContent = {
-    title: 'The Foundation for Beautiful Astro JS Websites',
-    description: 'Titan Core is a minimal, performance-focused Astro JS theme that serves as the perfect foundation for your next web project. Built with clean code and modern best practices, it\'s designed to be extended and customized to your specific needs.',
-    buttons: [
-        {
-            text: 'Get Started',
-            link: '/contact',
-            target: '_self'
-        },
-        {
-            text: 'View on GitHub',
-            link: 'https://github.com/rspisarski/titan-core',
-            target: '_blank'
-        }
-    ],
-    backgroundImage: heroImage,
+    title: 'Your Trusted Partner in Construction',
+    description: 'As your trusted construction partner, we take pride in our ability to navigate the complexities of any building endeavor, offering a full spectrum of services tailored to your unique project requirements and long-term goals.',
+
+    backgroundVideo: heroVideo,
     overlayOpacity: 0.2
 }
 
 const featuresSection = {
-    eyebrow: "CORE FEATURES",
+    eyebrow: "CORE IDEALS",
     title: "Everything You Need, Nothing You Don't",
-    description: "Titan Core gives you a solid foundation with essential features while staying lightweight and customizable. Start with a clean slate and build exactly what you need without the bloat.",
+    description: "We're dedicated to laying the solid foundation your vision deserves, working hand-in-hand with you. Together, we build not just structures, but a strong base for your future success, from the ground up.",
     features: featureLists.main.features,
     button: {
-        text: "View Theme Info",
+        text: "View Services Info",
         link: "/theme-info",
         variant: "primary" as const
     }
@@ -51,13 +40,12 @@ const featuresSection = {
 
 const FooterCta = {
     eyebrow: "Join The Community",
-    title: ' Start Building With Titan Core Today',
-    description: 'Titan Core is open-source and constantly improving. Join our community of developers to contribute, get support, or showcase what you\'ve built.',
+    title: ' Start Building With Us Today',
+    description: 'We\'re ready when you are!',
     hideCta: false,
     button: {
-        text: 'Download Titan Core',
-        link: 'https://github.com/rspisarski/titan-core',
-        target: '_blank'
+        text: 'Contact Us',
+        link: '/contact',
     }
 }
 
@@ -80,15 +68,15 @@ const styleGuideSection = {
 
 const sideBySideStats = {
     eyebrow: "Stats",
-    title: "Built for Speed and Flexibility",
+    title: "Providing Speed and Flexibility",
     description: "Titan Core is designed with performance and developer experience in mind. Our lightweight theme gives you all the essentials without the bloat, letting you build exactly what you need with impressive speed.",
     variant: 'side-by-side' as const,
     stats: statsLists.withContent.stats,
     content: {
-        title: "Built for Speed and Flexibility",
-        description: "Titan Core is designed with performance and developer experience in mind. Our lightweight theme gives you all the essentials without the bloat, letting you build exactly what you need with impressive speed.",
+        title: "Providing Speed and Flexibility",
+        description: "From quick turnarounds to complex projects with evolving scopes, our team is built for speed and engineered for flexibility. We streamline processes and adapt to your unique needs, ensuring timely completion every time.",
         button: {
-            text: "Discover Titan Core",
+            text: "View Projects",
             link: "/theme-info",
             variant: "primary" as const
         }
@@ -116,7 +104,7 @@ const logosSection = {
 const faqsSection = {
     eyebrow: "FAQs",
     title: 'Frequently Asked Questions',
-    description: 'Find answers to common questions about our platform and services.',
+    description: 'Find answers to common questions about our services.',
     faqs: faqLists.main.faqs
 }
 
