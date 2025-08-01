@@ -4,7 +4,6 @@ export const headerMenu = [
     { name: 'Home', link: '/' },
     { name: 'About us', link: '/about-us' },
     { name: 'Services', link: '/services' },
-    { name: 'Projects', link: '/projects' },
 ];
 
 export const footerMenu = [

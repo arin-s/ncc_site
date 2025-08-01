@@ -3,6 +3,8 @@ import { headerMenu } from '@data/menu';
 import Logo from '@components/Logo.astro';
 import { Menu, X, ChevronDown } from 'lucide-astro';
 import Button from '@components/ui/Button.astro';
+import { Image } from 'astro:assets';
+import logoIcon from '../assets/images/logo-small.png';
 
 const ctaButton = {
     name: 'Contact Us',
@@ -24,7 +26,16 @@ const isCurrentPage = (link: string) => {
 <header class="fixed top-0 z-50 w-full left-0">
     <div class="site-container mx-auto px-4 mt-4">
         <div class="flex justify-between items-center bg-white py-4 rounded-lg px-4 border-black border">
+            <div class="flex flex-row items-center">
+            <Image
+                src={logoIcon}
+                alt=""
+                class="object-contain h-10 w-auto pr-3"
+                quality={80}
+                format="webp"
+            />
             <Logo />
+            </div>
             <nav class="relative flex items-center gap-2 lg:gap-8" aria-label="Site Navigation">
                 {/* Desktop Menu */}
                 <ul class="hidden lg:flex lg:gap-8 items-center">
@@ -90,7 +101,7 @@ const isCurrentPage = (link: string) => {
                     }
                 </ul>
 
-                <Button href={ctaButton.link} variant="primary">{ctaButton.name}</Button>
+                <Button href={ctaButton.link} variant="primary" class:list={'whitespace-nowrap'}>{ctaButton.name}</Button>
 
                 {/* Mobile Menu Button */}
                 <button

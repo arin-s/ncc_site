@@ -30,6 +30,7 @@ export interface Props {
     paddingTop?: PaddingSize;
     paddingBottom?: PaddingSize;
     padding?: PaddingSize;
+    descriptionClass?: string
 }
 
 const {
@@ -40,6 +41,7 @@ const {
     paddingTop,
     paddingBottom,
     padding,
+    descriptionClass,
 } = Astro.props;
 
 const { eyebrow, headline, subheadline, description, image, buttons = [] } = content;
@@ -54,7 +56,7 @@ const textColor = getTextColor(background);
     <div class="site-container px-4">
         <div
             class:list={[
-                'grid gap-16 items-center',
+                'grid gap-16 items-start',
                 'md:grid-cols-2',
                 imagePosition === 'left' ? 'md:grid-cols-[1fr_1fr]' : '',
             ]}
@@ -89,7 +91,7 @@ const textColor = getTextColor(background);
                 }
                 {
                     description && (
-                        <p class:list={['mt-6 text-base opacity-90', textColor]} data-aos="fade-up">
+                        <p class:list={['mt-6 text-base opacity-90', textColor, descriptionClass]} data-aos="fade-up">
                             {description}
                         </p>
                     )

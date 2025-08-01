@@ -1,0 +1,78 @@
+---
+import Layout from '@layouts/Layout.astro';
+import InnerHero from '@components/sections/InnerHero.astro';
+import SplitPanel from '@components/sections/SplitPanel.astro';
+import aboutUsImage from '../../assets/images/joel.jpg'
+
+const heroContent = {
+    title: "Our Services",
+    description: ""
+}
+
+const newHomeSection = {
+    //eyebrow: "Design System",
+    headline: "New Home Construction",
+    subheadline: "",
+    description: "",
+    image: {
+        src: aboutUsImage,
+        alt: "Featured image"
+    }
+}
+
+const grannyFlatSection = {
+    //eyebrow: "Design System",
+    headline: "Granny Flats & Secondary Dwellings",
+    subheadline: "",
+    description: "",
+    image: {
+        src: aboutUsImage,
+        alt: "Featured image"
+    }
+}
+
+const homeExtSection = {
+    //eyebrow: "Design System",
+    headline: "Home Extensions & Additions",
+    subheadline: "",
+    description: "",
+    image: {
+        src: aboutUsImage,
+        alt: "Featured image"
+    }
+}
+
+const fullRenoSection = {
+    //eyebrow: "Design System",
+    headline: "Full-Home Renovations",
+    subheadline: "",
+    description: "",
+    image: {
+        src: aboutUsImage,
+        alt: "Featured image"
+    }
+}
+
+const kitchenBathroomSection = {
+    //eyebrow: "Design System",
+    headline: "Kitchen & Bathroom Renovations",
+    subheadline: "",
+    description: "",
+    image: {
+        src: aboutUsImage,
+        alt: "Featured image"
+    }
+}
+
+---
+<Layout title="Services" description="Our Services">
+    <InnerHero content={heroContent} />
+    <section class="site-container mx-auto px-8 pt-small" data-aos="fade-up" data-aos-delay="100">
+      <h1 class="text-accent">Transparency, craftsmanship, and care in every project we undertake.</h1>
+    </section>
+    <SplitPanel content={newHomeSection} padding='small' background='base' descriptionClass='whitespace-pre-line'></SplitPanel>
+    <SplitPanel content={grannyFlatSection} padding='small' background='light' descriptionClass='whitespace-pre-line' imagePosition='left'></SplitPanel>
+    <SplitPanel content={homeExtSection} padding='small' background='base' descriptionClass='whitespace-pre-line'></SplitPanel>
+    <SplitPanel content={fullRenoSection} padding='small' background='light' descriptionClass='whitespace-pre-line'imagePosition='left'></SplitPanel>
+    <SplitPanel content={kitchenBathroomSection} padding='small' background='base' descriptionClass='whitespace-pre-line'></SplitPanel>
+</Layout>

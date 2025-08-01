@@ -1,0 +1,35 @@
+---
+import Layout from '@layouts/Layout.astro';
+import InnerHero from '@components/sections/InnerHero.astro';
+import SplitPanel from '@components/sections/SplitPanel.astro';
+import aboutUsImage from '../../assets/images/joel.jpg'
+
+const heroContent = {
+    title: "About us",
+    description: ""
+}
+
+const splitSection = {
+    eyebrow: "The Owner",
+    headline: "Joel Abrahamian",
+    subheadline: "",
+    description: "Joel has overseen everything from high-end custom builds to volume project homes, managing teams of tradies, \
+      liaising with clients, and driving projects from planning to completion.\n\
+      With a background in carpentry, quantity surveying, and construction management, he brings a rare blend of technical knowledge, on-site expertise, and client-first service.\n\
+      His time leading projects for respected builders like Schenk Construction and Creation Homes has shaped the vision for New Covenant Construction — a company that values clear communication, high standards, and honest work.",
+    image: {
+        src: aboutUsImage,
+        alt: "Featured image"
+    }
+}
+---
+<Layout title="About us" description="Meet the team">
+    <InnerHero content={heroContent}/>
+    <section class="site-container--small mx-auto px-8 py-small" data-aos="fade-up" data-aos-delay="100">
+      <h1 class="text-center mb-4 text-headline">Our Values</h1>
+      <h3 class="text-center mb-4 text-eyebrow">Building with Integrity, Craftsmanship, and Faith</h3>
+      <p class="text-center mb-4 text-body">At New Covenant Construction, we offer quality residential building solutions built on integrity, excellence, and faith-based values.</p>
+      <p class="text-center mb-4 text-body">Whether you're planning a new home or looking to renovate, we bring a commitment to transparency, craftsmanship, and care in every project we undertake.</p>
+    </section>
+    <SplitPanel content={splitSection} padding='base' background='light' descriptionClass='whitespace-pre-line'></SplitPanel>
+</Layout>

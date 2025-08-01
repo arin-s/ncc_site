@@ -38,6 +38,11 @@ export const featureLists: Record<string, FeatureList> = {
                 icon: House,
                 title: 'New Builds',
                 description: 'We\'re also more than happy to assist with new build projects too, be it a granny flat or a family home.'
+            },
+                        {
+                icon: House,
+                title: 'New Builds',
+                description: 'We\'re also more than happy to assist with new build projects too, be it a granny flat or a family home.'
             }
         ]
     },

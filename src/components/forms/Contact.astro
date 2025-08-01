@@ -21,18 +21,21 @@ const interestOptions = [
 ];
 
 const serviceOptions = [
-    { label: "Knockdown-Rebuild", value: "website" },
-    { label: "New Build", value: "mobile" },
-    { label: "Buildy build", value: "design" },
-    { label: "Wheeee buildddd", value: "marketing" },
-    { label: "Aghs blink dagger mid", value: "consulting" }
+    { label: "New Home Construction", value: "new-home-construction" },
+    { label: "Granny Flats & Secondary Dwellings", value: "granny-flats-secondary-dwellings" },
+    { label: "Home Extensions & Additions", value: "home-extensions-additions" },
+    { label: "Full-Home Renovations", value: "full-home-renovations" },
+    { label: "Kitchen & Bathroom Renovations", value: "kitchen-bathroom-renovations" }
 ];
 
 const budgetOptions = [
-    { label: "$0 - $500,000", value: "5-10k" },
-    { label: "$500,000 - $1,000,000", value: "5-10k" },
-    { label: "$1,000,000 - $1,500,000", value: "10-25k" },
-    { label: "$1,500,000+", value: "25-50k" },
+    { label: "$0 - $50,000", value: "0-50k" },
+    { label: "$50,000 - $100,000", value: "50-100k" },
+    { label: "$100,000 - $200,000", value: "100-200k" },
+    { label: "$200,000 - $500,000", value: "200-500k" },
+    { label: "$500,000 - $1,000,000", value: "500-1000k" },
+    { label: "$1,000,000 - $1,500,000", value: "1000-1500k" },
+    { label: "$1,500,000+", value: "1500k+" },
 ];
 
 const formBackground = 'light';
@@ -70,24 +73,6 @@ const formBackground = 'light';
         background={formBackground}
     />
     </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <Radio
-            label="How did you hear about us?"
-            id="hear-about"
-            name="hear-about"
-            options={hearAboutOptions}
-            required
-            background={formBackground}
-        />
-    <Checkbox
-        label="Areas of Interest"
-        id="interests"
-        name="interests"
-        options={interestOptions}
-        background={formBackground}
-    />
-    </div>
     
     <Textarea
         label="Message"
@@ -96,15 +81,7 @@ const formBackground = 'light';
         required
         background={formBackground}
     />
-    
-    <Checkbox
-        label="I agree to the terms and conditions"
-        id="terms"
-        name="terms"
-        required
-        background={formBackground}
-    />
-    
+
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
         <Select
             label="What service are you interested in?"
@@ -126,7 +103,13 @@ const formBackground = 'light';
         />
     </div>
 
-
+    <Checkbox
+        label="I agree to the terms and conditions"
+        id="terms"
+        name="terms"
+        required
+        background={formBackground}
+    />
 
     <div class="mt-6">
         <Button>Submit</Button>
